@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Cardo");
+* {
+  box-sizing: border-box; }
+
+body, .jumbotron {
+  padding: 0;
+  margin: 0;
+  font: "Raleway", sans-serif; }
+
+section {
+  margin: 7.5% 0; }
+
+/* jumbotron */
+.jumbotron {
+  background: url("../image/2.jpeg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+
+.jumbo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%; }
+
+.jumbo-text h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 4em; }
+
+.jumbo-text p {
+  font-size: 1em; }
+
+.text-color {
+  color: white; }
+
+/*navbar*/
+.nav-text {
+  color: white;
+  font-weight: 800;
+  overflow: hidden; }
+
+.nav-text a {
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  color: rgba(255, 255, 255, 0.8); }
+  .nav-text a:hover {
+    transform: scale(1.2); }
+
+.nav-text li a:hover, .nav-text li a:focus {
+  color: white;
+  background: none; }
+
+.nav-border {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.border {
+  border: solid 1px white; }
+
+span {
+  background: white; }
+
+.layer {
+  background: rgba(41, 42, 82, 0.9);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  position: absolute; }
+
+.button-red {
+  border-radius: 0;
+  padding: 1% 10%;
+  transition-duration: 0.4s;
+  transition-timing-function: ease; }
+
+.button-red:hover {
+  transform: scale(1.2); }
+
+/*icons*/
+h3 {
+  font-weight: 800;
+  font-size: 1.5em; }
+
+.icons p {
+  font-size: 1.1em; }
+
+.transform {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out; }
+
+.icons img:hover {
+  transform: scale(1.2, 1.2);
+  cursor: pointer; }
+
+.line {
+  padding-bottom: 5%; }
+
+/*work images*/
+.box_img {
+  position: relative;
+  max-height: 250px;
+  padding: 0; }
+
+.box_img img {
+  width: 100%;
+  height: 250px;
+  padding: 1px; }
+
+.layer2 {
+  position: absolute;
+  background: rgba(232, 69, 69, 0.8);
+  width: 100%;
+  height: 100%;
+  opacity: 0; }
+
+.box_img:hover .layer2 {
+  opacity: 1;
+  transition-duration: 0.5s;
+  cursor: pointer; }
+
+.scale {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.layer2:hover .transform {
+  transform: scale(1.2); }
+
+/* team images*/
+.team {
+  padding: 2% 2%; }
+
+.function-color {
+  color: #e84545; }
+
+.team i {
+  padding: 3%;
+  border: solid 1px;
+  color: rgba(0, 0, 0, 0.3); }
+
+.team i:hover {
+  color: rgba(0, 0, 0, 0.7);
+  transition-duration: 0.5s;
+  cursor: pointer; }
+
+/*carousel*/
+.clients {
+  background: #53354a; }
+
+.corouselSize {
+  max-height: 600px; }
+
+.carouselImg img {
+  width: 100%;
+  height: 400px; }
+
+.corouselText {
+  color: white;
+  padding: 7.5% 5% 0; }
+
+.corouselText q {
+  font-size: 2em;
+  font-style: italic;
+  font-family: 'Cardo', serif; }
+
+.corouselText p {
+  padding: 5% 0;
+  font-weight: 800; }
+
+.circle {
+  position: absolute;
+  left: 65%; }
+
+.circle li {
+  background: rgba(255, 255, 255, 0.5);
+  border: none; }
+
+.buttons {
+  display: none; }
+
+/*download*/
+.download p {
+  padding: 2% 0;
+  font-weight: 800; }
+
+/*about us*/
+.about_us {
+  background: #3a3e64;
+  margin-bottom: 0; }
+
+.about_us h4 {
+  padding: 2%;
+  font-weight: 800; }
+
+.about_us p {
+  color: rgba(255, 255, 255, 0.5); }
+
+.about_us i {
+  padding: 3%;
+  border: solid 2px white; }
+
+.about_us i:hover {
+  color: #3a3e64;
+  background: white;
+  transition-duration: 0.5s;
+  cursor: pointer; }
+
+/*footer*/
+.footer {
+  background: #313454;
+  margin: 0; }
+
+@media (max-width: 992px) {
+  /*jumbotron*/
+  .navbar-fixed-top {
+    width: 100%; }
+  .jumbo-text {
+    width: 80%;
+    position: absolute;
+    top: 70%; }
+  .jumbo-text h2 {
+    font-size: 2.5em; }
+  .jumbo-text p {
+    font-size: 1em; }
+  /*navbar*/
+  .align {
+    text-align: center; }
+  /*carousel*/
+  .carouselImg img {
+    height: 300px; }
+  .corouselText q {
+    padding: 1% 0;
+    font-size: 1.5em; }
+  .corouselText p {
+    padding: 1% 0;
+    font-weight: 800; }
+  .carousel-indicators {
+    display: none; }
+  .buttons {
+    display: block; }
+  .buttons span {
+    background: none; } }
